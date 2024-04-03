@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework Overview</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light  bg-primary">
+  <img src="./student-80.png">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Attendance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Schedule</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Homework<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="text-center mt-5"><h2>HOMEWORK</h2></div>
+<div class="container mt-5 ">
+  <div class="row">
+    <div class="col">
+      <select class="custom-select" id="groupSelect">
+        <option selected>Choose group</option>
+        <option value="ABC-1234">ABC-1234</option>
+      </select>
+    </div>
+    <div class="col">
+      <select class="custom-select" id="subjectSelect">
+        <option selected>Choose subject</option>
+        <option value="HTML & CSS">HTML & CSS</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-homework  pt-2 btn-primary" data-toggle="modal" data-target="#homeworkModal">Show</button>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <table class="table table-hover ">
+    <thead>
+      <tr class="bg-primary">
+        <th scope="col"></th>
+        <th scope="col">Student</th>
+        <th scope="col">16.04</th>
+        <th scope="col">14.04</th>
+        <th scope="col">12.04</th>
+        <th scope="col">10.04</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Ashton Hickman</td>
+            <td>
+                <select class="custom-select-1">
+                  <option value="">-</option>
+                  <option value="1">+</option>
+                </select>
+              </td>
+        <td>...</td>
+        <td>
+          <select class="custom-select-1">
+            <option value="">10</option>
+            <option value="1">20</option>
+          </select>
+        </td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Mischa Roberson</td>
+        <td>...</td>
+        <td>
+          <select class="custom-select-1">
+            <option value="">-</option>
+            <option value="1">+</option>
+          </select>
+        </td>
+        <td>...</td>
+        <td>
+          <select class="custom-select-1">
+            <option value="">9</option>
+            <option value="1">20</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Jaydon Metcalfe</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Gary Jacobson</td>
+        <td>...</td>
+        <td>...</td>
+        <td>
+          <select class="custom-select-1">
+            <option value="">11</option>
+            <option value="1">20</option>
+          </select>
+        </td>
+        <td>
+          <select class="custom-select-1">
+            <option value="">10 </option>
+            <option value="1">20</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
